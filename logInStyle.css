@@ -101,7 +101,7 @@ form{
 form input[type="text"]{
     background-color: transparent;
     border-radius: 5px; 
-    width: 100%; 
+    width: 100%;  
     font-size: medium;  
     padding: 8px;
     border: #fff 1px solid;
@@ -116,6 +116,7 @@ form #userName,form #forgot_password{
 }
 
 .link{
+    padding-top: 10px;
     display: flex;
     width: 100%;
     grid-area: li;
@@ -123,5 +124,5 @@ form #userName,form #forgot_password{
 }
 
 .link a{
-    padding: 3px;
+    padding-left: 5px;
 }
