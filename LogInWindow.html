@@ -1,40 +1,68 @@
 <!DOCTYPE html>  
 <html lang="en" dir="ltr">
+
+ <!-- head of the Page -->
 <head>
   <meta name="charset" content="UTF-8">
+  
   <meta name="description" content="Twitter Log In">
+  
   <meta name="author" content="Barat Ali Hassanzada">  
+  
   <meta name="viewport" content="width=device-width,initial-content=1.0">
+  
   <title>LogIn to Twitter</title>  
+  
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>  
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
   <link rel="stylesheet" href="logInStyle.css">    
 </head>  
+
+ <!-- body of the Page -->
 <body>
+  
+  <!-- box is the container of Grid -->
    <div class="box">
+     
+    <!-- Log of the page -->
       <div class="logo">
          <a href="#"><i class='bx bxl-twitter'></i></a>  
       </div>
+
+      <!-- Content of the page -->
       <div class="content">
          <h4>Sign in to Twitter</h4>  
       </div>
+
+      <!-- Gooogle button  -->
       <div class="googleButton">
         <button type="button" class="btn btn-light"><i class='bx bxl-google'>&nbsp;</i>Sign in with Google</button>
       </div>
+      
+      <!-- apple button  -->
       <div class="appleButton">  
         <button type="button" class="btn btn-light"><i class='bx bxl-apple' ></i>&nbsp;</i>Sign in With Apple</button>  
       </div>
+
+      <!-- this is the dash that seperate the rest of the Page -->
       <div class="dash">
         <hr id="dash_1"><p>Or</p><hr id="dash_2"> 
       </div>  
+
+      <!-- this is the form of for button -->
       <form action="#">
         <input type="text" placeholder="Phone, email, or username">   
         <button type="button" id="userName" class="btn btn-light">Next</button>
         <button type="button" id="forgot_password" class="btn btn-dark">Forgot password?</button> 
       </form>
+
+      <!-- A link for Sign up Window -->
       <div class="link">
          <p>Don't have an account</p> <a href="#">Sign up</a>
       </div>
+
    </div>    
 </body>
 </html>
