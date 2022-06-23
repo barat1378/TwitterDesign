@@ -25,6 +25,7 @@ body{
     margin-left: 15px;;  
 }
 
+
 .left img{
     width: 100%;  
     height: max-content;
@@ -36,6 +37,18 @@ body{
     padding-left: 10px;
     margin-right: 10px;
     grid-area: rig;  
+}
+
+.left #shipe{
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);  
+    background-color: rgb(198, 235, 250);  
+    z-index: -1;
+    width: 40%;
+    height: 500px;
+    position: absolute;
+    margin-left: -100px;  
+    margin-top: -100px;
 }
 
 .box{
@@ -76,7 +89,7 @@ body{
     font-size: larger; 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
    .left{
      display: none;
    }  
