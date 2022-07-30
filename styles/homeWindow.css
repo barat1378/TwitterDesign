@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@200&display=swap');
+
+:root {
+    --font-color: #2f2e2e;
+    --border-color: #cccaca;
+    --logo-size: 2.5rem;
+    --border-width: 0.1rem;
+    --profile-photo-width: 3.5rem;
+    --profile-photo-heigth: 3.5rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.left-navbar {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    border-right: var(--border-width) var(--border-color) solid;
+}
+
+.left-navbar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 70%;
+}
+
+.logo a {
+    font-size: var(--logo-size);
+    text-transform: none;
+}
+
+.logo a:hover {
+    background-color: #bbe2f8;
+    border-radius: 80px;
+}
+
+.nav-list {
+    display: flex;
+    margin-top: 5px;
+    justify-content: start;
+}
+
+
+.nav-list ul {
+   font-size: 1.5rem;
+    list-style: none;
+    padding-left: 0.2rem;
+}
+
+.nav-list ul li {
+    margin-bottom: 0.2rem;
+    padding: 5px;
+}
+
+.nav-list ul li:hover {
+    background-color: #7fd7f5;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.nav-list ul li a{
+    outline: none;
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+
+.nav-list ul li a i {
+   margin-right: 0.6rem;
+}
+
+.btn-info {
+   border-radius: 20px;
+   width: 100%;
+   color: #ffffff;
+   font-weight: bold;
+}
+
+.home {
+    border-right: var(--border-width) solid var(--border-color);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 2rem;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.profile #profile-menu-button {
+   border: none;
+   background-color: transparent;
+   font-size: 1.2rem;
+}
+
+.profile-container #profile-photo {
+    width: var(--profile-photo-width);
+    height: var(--profile-photo-heigth);
+    border-radius: 50px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-container .profile-content {
+    align-items: center;
+    padding-top: 5px;
+    margin-left: 5px;
+}
+
+.profile-content #profile-name {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+.profile-content #profile-username {
+    font-size: 0.8rem;
+    margin-top: -15px;
+}
+
+.profile:hover {
+    border-radius: 50px;
+    background-color: #cccccc;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .nav-content {
+      display: none;
+    }
+
+    .btn-info {
+       color: #ffffff;
+       font-weight: bolder;
+       border-radius: 50px;
+    }
+
+    .profile-content {
+        display: none;
+    }
+
+    .profile #profile-menu-button {
+        display: none;
+    }
+
+    .logo a {
+        font-size: 1.2rem;
+    }
+
+
+    .logo {
+       text-align: center;
+    }
+
+    .nav-list {
+       display: flex;
+       justify-content: center;
+    }
+
+    .nav-list ul li a {
+       font-size: 1.1rem;
+    }
+
+    html {
+        font-size: 1.2rem;
+    }
+
+    .left-navbar {
+        width: 15%;
+    }
+
+    .right-navbar {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .right-navbar {
+       display: none;
+    }
+
+     .profile-content {
+        display: none;
+    }
+
+
+    .left-navbar-container  {
+        text-align: center;
+    }
+
+    .profile #profile-menu-button {
+        display: none;
+    }
+
+    .profile-container #profile-photo{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    html {
+       font-size: 1.2rem;
+    }
+
+    .btn-info {
+       font-size: 0.5rem;
+       margin-left: -5px;
+       width: fit-content;
+    }
+
+    .profile {
+        margin-left: -10px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .btn-info {
+        font-size: 0.4rem;
+        margin-left: -14px;
+        width: fit-content;
+    }
+}
