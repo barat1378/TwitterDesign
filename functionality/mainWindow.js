@@ -7,6 +7,8 @@ $(document).ready(() => {
     });
 });
 
+
+
 function WindowlessThan1200Px(width) {
     const button = $('.btn-info');
     if (width < 1200)
@@ -27,6 +29,33 @@ function  WindowlessThan1000Px(width) {
        exploreLink.html(exploreHtml);
 }
 
-$('#profile-menu-button').click(()=>{
 
-});
+
+class User {
+    constructor(name,photo,userName,work) {
+       this.name = name;  
+       this.photo = photo;  
+       this.userName = userName;  
+       this.work = work;    
+    }
+
+    getName() {
+        return this.name;  
+    }
+
+    setName(name) {
+        this.name = name;     
+    }
+
+    getPhoto() {
+        return this.photo;
+    }
+
+    getUsername() {
+        return this.photo;
+    }
+
+    getWork() {
+        return this.work;
+    }
+}

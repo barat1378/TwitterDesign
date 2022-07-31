@@ -46,7 +46,7 @@
                 <button class="btn btn-info btn-lg" id="tweet-button">Tweet</button>
 
                 <div class="profile">
-               <span class="profile-container">
+               <a href="C:\Users\barat\WebstormProjects\Twitter\windows\profileWIndow.html" class="profile-container">
                    <img src="../images/myphoto.jpg" class="profile-photo" alt="Not supported">
                    <div class="profile-content">
                        <p class="profile-name">
@@ -57,7 +57,7 @@
                        </p>
                    </div>
 
-               </span>
+                </a>
                     <div class="dropdown">
                         <button type="button" id="profile-menu-button"
                                 data-bs-toggle="dropdown" aria-expanded="true">
@@ -66,7 +66,7 @@
                         <ul class="dropdown-menu" aria-labelledby="profile-menu-button">
                             <li>
                                 <div class="dropdown-item profile-info">
-                                    <div class="profile-container">
+                                    <div href="https://www.twitter.com" class="profile-container">
                                         <img src="../images/myphoto.jpg" class="profile-photo" alt="Not supported">
                                         <div class="profile-content">
                                             <p class="profile-name">
@@ -100,13 +100,40 @@
         <!--    End of left navbar-->
 
         <!--    start of home-->
-        <section class="home col-md-6">
+        <section class="home col-md-5">
 
         </section>
         <!--    End of home-->
         <!--    start of right-navbar-->
-        <section class="right-navbar col-md-3">
+        <section class="right-navbar col-md-4">
+            <div class="right-navbar-container">
+               <form class="search-group">
+                   <label for="search-input"><i class='bx bx-search'></i></label>
+                   <input type="search" placeholder="Search Twitter" class="form-control" id="search-input">
+               </form>
 
+               <section class="who-to-follow">
+                   <p id="content">
+                      Who to follow
+                   </p>
+
+                   <div class="to-follow-container">
+                       <a href="#" class="profile-container">
+                           <img src="../images/myphoto.jpg" class="profile-photo" alt="Not supported">
+                           <div class="profile-content">
+                               <p class="profile-name">
+                                   Barat Ali
+                               </p>
+                               <p class="profile-username">
+                                   @baratali1378
+                               </p>
+                           </div>
+                        </a>
+                       <button class="btn btn-dark" id="follow-button">Follow</button>
+                   </div>
+
+               </section>
+            </div>
         </section>
         <!--  End of right nav bar -->
     </section>
