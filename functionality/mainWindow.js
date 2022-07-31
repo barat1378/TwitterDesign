@@ -27,4 +27,6 @@ function  WindowlessThan1000Px(width) {
        exploreLink.html(exploreHtml);
 }
 
+$('#profile-menu-button').click(()=>{
 
+});
