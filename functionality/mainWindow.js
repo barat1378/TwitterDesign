@@ -42,7 +42,6 @@ function setFollowerAttribute(followers) {
                     `
         container.after(value);
     }
-    $('.who-to-follow').children().css("margin-bottom","1.8rem");
 }
 
 function WindowlessThan1200Px(width) {
