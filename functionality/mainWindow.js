@@ -9,25 +9,31 @@ $(document).ready(() => {
 
 function loadFollower() {
     const followers = Array.from(follower);
-    followers[0] = new follower('Elon Musk', 'C:\Users\barat\WebstormProjects\Twitter\images\download.jpg', "@elonmusk", "Mars & cars");
-    followers[1] = new follower('Mark Zuckerberg', 'C:\Users\barat\WebstormProjects\Twitter\images\download (1).jpg', "@mark zuckerberg", "facebook manager");
-    followers[2] = new follower('Jeff Bezos', 'C:\Users\barat\WebstormProjects\Twitter\images\OIP.jpg', "@jeff bezos", "Amazon");
+    followers[0] = new follower('Elon Musk',getImage('C:\\Users\\barat\\WebstormProjects\\Twitter\\images\\download.jpg'), "@elonmusk", "Mars & cars");
+    followers[1] = new follower('Mark Zuckerberg',getImage('C:\\Users\\barat\\WebstormProjects\\Twitter\\images\\download (1).jpg'), "@mark zuckerberg", "facebook manager");
+    followers[2] = new follower('Jeff Bezos',getImage('C:\\Users\\barat\\WebstormProjects\\Twitter\\images\\OIP.jpg'), "@jeff bezos", "Amazon");
     setFollowerAttribute(followers);
+}
+
+function getImage(source) {
+  const image = new Image(200,200);
+  image.src = source;
+  return image;
 }
 
 function setFollowerAttribute(followers) {
     const container = $('.who-to-follow #content');
-    const image = 'C:\Users\barat\WebstormProjects\Twitter\images\myphoto.jpg';
-    for (let x of followers) {
+    const image = "https://github.com/barat1378/TwitterDesign/blob/15771c9a73083ee5fde5b9202ad78737d83aa610/images/download.jpg";
+    for (let i = 0; i<3; i++) {
        const value  = `<div class="to-follow-container">
                        <a href="#" class="profile-container">
-                           <img src=${image} class="profile-photo" alt="Not supported">
+                           <img src=${followers[i].Photo.src} class="profile-photo" alt="Not supported">
                            <div class="profile-content">
                                <p class="profile-name">
-                                  ${x.name}
+                                  ${followers[i].name}
                                </p>
                                <p class="profile-username">
-                                  ${x.userName} 
+                                  ${followers[i].userName} 
                                </p>
                            </div>
                         </a>
@@ -36,6 +42,7 @@ function setFollowerAttribute(followers) {
                     `
         container.after(value);
     }
+    $('.who-to-follow').children().css("margin-bottom","1.8rem");
 }
 
 function WindowlessThan1200Px(width) {

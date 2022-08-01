@@ -225,6 +225,7 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .to-follow-container #follow-button {
@@ -232,6 +233,7 @@
     height: 35px;
     width: 7rem;
 }
+
 
 .profile-username {
     font-size: 0.8rem;
