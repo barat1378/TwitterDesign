@@ -154,9 +154,42 @@
     overflow: hidden;
 }
 
+.to-follow-container .dropdown:hover .dropdown-menu{
+    display: block;
+    width: 350px;
+    padding: 14px;
+    border-radius: 20px;
+    cursor: auto;
+}
+
+.follow-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.follow-container > a{
+   text-decoration: none;
+   text-transform: none;
+   outline: none;
+   color: var(--font-color);
+}
+
+
 .search-group:hover {
     border-radius: 50px;
     border: 1px #87daf6 solid;
+}
+
+.drop-down-header {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+}
+
+.menu-item-personal-info > a{
+   text-decoration: none;
+   outline: none;
+   color: var(--font-color);
 }
 
 .search-group #search-input {
@@ -206,7 +239,7 @@
     overflow-x: hidden;
 }
 
-.who-to-follow {
+.who-to-follow , .trends-for-you{
     display: flex;
     flex-direction: column;
     background-color: #f8eeee;
@@ -215,7 +248,10 @@
     border-radius: 20px;
 }
 
-
+.trends-for-you #trend-content{
+   text-transform: none;
+   font-weight: bold;
+}
 
 .who-to-follow #content {
     font-size: 1.2rem;
@@ -375,3 +411,4 @@
         width: fit-content;
     }
 }
+
