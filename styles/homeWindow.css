@@ -53,7 +53,7 @@
 
 
 .nav-list ul {
-   font-size: 1.5rem;
+    font-size: 1.5rem;
     list-style: none;
     padding-left: 0.2rem;
 }
@@ -69,7 +69,7 @@
     cursor: pointer;
 }
 
-.nav-list ul li a{
+.nav-list ul li a {
     outline: none;
     text-decoration: none;
     color: var(--font-color);
@@ -77,14 +77,14 @@
 
 
 .nav-list ul li a i {
-   margin-right: 0.6rem;
+    margin-right: 0.6rem;
 }
 
 .btn-info {
-   border-radius: 20px;
-   width: 100%;
-   color: #ffffff;
-   font-weight: bold;
+    border-radius: 20px;
+    width: 100%;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 .home {
@@ -102,9 +102,9 @@
 }
 
 .profile #profile-menu-button {
-   border: none;
-   background-color: transparent;
-   font-size: 1.2rem;
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
 }
 
 .profile-photo {
@@ -118,21 +118,109 @@
     flex-direction: row;
     align-items: center;
     width: 100%;
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.profile-container:hover {
+    cursor: pointer;
+    color: var(--font-color);
+}
+
+.profile-info .profile-container:hover {
+    cursor: auto;
+}
+
+.right-navbar {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-navbar-container {
+    margin: 20px;
+    height: 100%;
+}
+
+
+.search-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e8e1e1;
+    padding: 10px;
+    border-radius: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.to-follow-container .dropdown:hover .dropdown-menu{
+    display: block;
+    width: 350px;
+    padding: 14px;
+    border-radius: 20px;
+    cursor: auto;
+}
+
+.follow-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.follow-container > a{
+   text-decoration: none;
+   text-transform: none;
+   outline: none;
+   color: var(--font-color);
+}
+
+
+.search-group:hover {
+    border-radius: 50px;
+    border: 1px #87daf6 solid;
+}
+
+.drop-down-header {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+}
+
+.menu-item-personal-info > a{
+   text-decoration: none;
+   outline: none;
+   color: var(--font-color);
+}
+
+.search-group #search-input {
+    border: none;
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.search-group label {
+    font-size: 1.2rem;
+    z-index: 1000;
+}
+
+.search-group label:hover {
+    color: #79c1ec;
 }
 
 .profile-info {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-between;
-   width: 100%;
-   cursor: auto;
-   border-bottom: var(--border-width) var(--border-color) solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: auto;
+    border-bottom: var(--border-width) var(--border-color) solid;
 }
 
 .profile-info #check-mark {
-   font-size: 1.8rem;
-   color: #4bb3ef;
+    font-size: 1.8rem;
+    color: #4bb3ef;
 }
 
 .dropdown-menu > li {
@@ -148,18 +236,77 @@
 .profile-name {
     font-size: 0.8rem;
     font-weight: bold;
+    overflow-x: hidden;
 }
 
+.who-to-follow , .trends-for-you{
+    display: flex;
+    flex-direction: column;
+    background-color: #f8eeee;
+    margin-top: 4rem;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.trends-for-you #trend-content{
+   text-transform: none;
+   font-weight: bold;
+}
+
+.who-to-follow #content {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.to-follow-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.to-follow-container:hover {
+    background-color: #cccaca;
+    border-radius: 50px;
+}
+
+.to-follow-container #follow-button {
+    border-radius: 20px;
+    height: 35px;
+    width: 7rem;
+}
+
+.who-to-follow #show-more-link {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+}
+
+.who-to-follow #show-more-link a {
+    text-transform: none;
+    color: #0093E9;
+    outline: none;
+    text-decoration: none;
+}
+
+
+.who-to-follow #show-more-link:hover {
+   border-radius: 20px;
+   background-color: #cccaca;
+   cursor: pointer;
+}
 
 .profile-username {
     font-size: 0.8rem;
     margin-top: -15px;
+    overflow-x: hidden;
 }
 
 .profile:hover {
     border-radius: 50px;
     background-color: #cccccc;
-    cursor: pointer;
 }
 
 .dropdown-menu {
@@ -169,13 +316,13 @@
 @media screen and (max-width: 1200px) {
 
     .nav-content {
-      display: none;
+        display: none;
     }
 
     .btn-info {
-       color: #ffffff;
-       font-weight: bolder;
-       border-radius: 50px;
+        color: #ffffff;
+        font-weight: bolder;
+        border-radius: 50px;
     }
 
     .profile-content {
@@ -192,16 +339,16 @@
 
 
     .logo {
-       text-align: center;
+        text-align: center;
     }
 
     .nav-list {
-       display: flex;
-       justify-content: center;
+        display: flex;
+        justify-content: center;
     }
 
     .nav-list ul li a {
-       font-size: 1.1rem;
+        font-size: 1.1rem;
     }
 
     html {
@@ -219,18 +366,17 @@
 }
 
 
-
 @media screen and (max-width: 1000px) {
     .right-navbar {
-       display: none;
+        display: none;
     }
 
-     .profile-content {
+    .profile-content {
         display: none;
     }
 
 
-    .left-navbar-container  {
+    .left-navbar-container {
         text-align: center;
     }
 
@@ -238,19 +384,19 @@
         display: none;
     }
 
-    .profile-container #profile-photo{
+    .profile-container #profile-photo {
         width: 2rem;
         height: 2rem;
     }
 
     html {
-       font-size: 1.2rem;
+        font-size: 1.2rem;
     }
 
     .btn-info {
-       font-size: 0.5rem;
-       margin-left: -5px;
-       width: fit-content;
+        font-size: 0.5rem;
+        margin-left: -5px;
+        width: fit-content;
     }
 
     .profile {
@@ -265,3 +411,4 @@
         width: fit-content;
     }
 }
+
